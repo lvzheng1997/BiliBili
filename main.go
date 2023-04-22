@@ -26,5 +26,6 @@ func main() {
 	gin.SetMode(DebugMode)
 	r := routes.NewRouter()
 	port := viper.GetString("server.port")
+	println("port :", port)
 	_ = r.Run(":" + port)
 }

@@ -5,6 +5,7 @@ import (
 	"github.com/robfig/cron"
 )
 
+// cron是个go的第三方库，用于执行定时任务
 var Cron *cron.Cron
 
 func CronJob() {
